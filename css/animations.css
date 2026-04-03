@@ -1,0 +1,189 @@
+/* ======================================
+   ANIMATION INITIAL STATES
+   (GSAP sets opacity: 1, y: 0 on scroll)
+====================================== */
+
+/* Only apply hidden states if JS is loaded */
+.js-loaded .anim-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.js-loaded .anim-fade-in {
+  opacity: 0;
+}
+
+.js-loaded .anim-scale-in {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+/* Steps — entrance animation */
+.step {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#how-it-works.steps-visible .step             { opacity: 1; transform: none; }
+#how-it-works.steps-visible .step:nth-child(1){ transition-delay: 0s; }
+#how-it-works.steps-visible .step:nth-child(2){ transition-delay: 0.18s; }
+#how-it-works.steps-visible .step:nth-child(3){ transition-delay: 0.36s; }
+
+/* Scroll-driven spotlight — kicks in after entrance */
+#how-it-works.spotlight-on .step {
+  transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#how-it-works.spotlight-on .step.sp-dim {
+  opacity: 0.40;
+  transform: scale(0.93);
+}
+#how-it-works.spotlight-on .step.sp-active {
+  opacity: 1;
+  transform: scale(1.06);
+}
+#how-it-works.spotlight-on .step.sp-active .step-num {
+  background: rgba(59, 158, 255, 0.22);
+  border-color: rgba(59, 158, 255, 0.9);
+  box-shadow:
+    0 0 0 8px rgba(59, 158, 255, 0.1),
+    0 0 48px rgba(59, 158, 255, 0.45);
+  color: #fff;
+}
+#how-it-works.spotlight-on .step.sp-active h3 {
+  color: #ffffff;
+}
+
+/* ======================================
+   GRADIENT TEXT SHIFT (CSS-only animation)
+====================================== */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--accent-blue) 0%,
+    #60C8FF 40%,
+    var(--accent-blue) 80%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 5s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ======================================
+   SCROLL INDICATOR (hero)
+====================================== */
+.scroll-hint {
+  position: absolute;
+  bottom: var(--sp-8);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  opacity: 0;
+  animation: hint-appear 0.5s ease 3s forwards;
+}
+
+.scroll-hint-line {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, var(--accent-blue), transparent);
+  animation: scroll-line 2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes scroll-line {
+  0%, 100% { transform: scaleY(1); opacity: 1; }
+  50%       { transform: scaleY(0.5); opacity: 0.3; }
+}
+
+@keyframes hint-appear {
+  to { opacity: 1; }
+}
+
+/* ======================================
+   NAV LINK HIGHLIGHT
+====================================== */
+.nav-inner .btn-wa {
+  transition: background var(--ease-normal), transform var(--ease-normal), box-shadow var(--ease-normal);
+}
+
+/* ======================================
+   SECTION ENTRANCE OVERRIDE
+   (Applied by GSAP after animation)
+====================================== */
+.anim-done {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* ======================================
+   HERO GRADIENT BG PULSE (mobile fallback)
+====================================== */
+#hero.hero-static {
+  background: linear-gradient(
+    160deg,
+    #FFFFFF 0%,
+    #F0F8FF 40%,
+    #E8F2FF 100%
+  );
+}
+
+/* ======================================
+   CARD ACTIVE STATE (touch devices)
+====================================== */
+@media (hover: none) {
+  .service-card:active {
+    transform: scale(0.98);
+    border-color: var(--border-accent);
+  }
+}
+
+/* ======================================
+   BLOB ANIMATION (proof-cta section)
+====================================== */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: blob-drift 18s ease-in-out infinite alternate;
+}
+
+.blob-1 {
+  width: 400px;
+  height: 300px;
+  background: rgba(59, 158, 255, 0.08);
+  top: 10%;
+  left: -10%;
+  animation-duration: 20s;
+}
+
+.blob-2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(96, 200, 255, 0.06);
+  bottom: 0%;
+  right: -5%;
+  animation-duration: 15s;
+  animation-delay: -8s;
+}
+
+@keyframes blob-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(30px, -20px) scale(1.05); }
+  66%  { transform: translate(-20px, 15px) scale(0.97); }
+  100% { transform: translate(15px, 10px) scale(1.03); }
+}

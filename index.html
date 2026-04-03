@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="3D Lab — Professional 3D printing in Cairo & Giza. Fast delivery, live WhatsApp tracking, custom design, and file repair. Start your order now.">
+  <meta name="theme-color" content="#3B9EFF">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="3D Lab — 3D Printing in Cairo & Giza">
+  <meta property="og:description" content="Upload a file, share an idea, or send a broken design — we handle it. Fast delivery. Live WhatsApp tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og.jpg">
+
+  <title>3D Lab — 3D Printing Cairo & Giza</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "3D Lab",
+    "description": "Professional 3D printing service in Cairo and Giza, Egypt",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cairo",
+      "addressCountry": "EG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.0444,
+      "longitude": 31.2357
+    },
+    "openingHours": "Sa-Th 09:00-22:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": ["Arabic", "English"]
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ======================================
+     NAVIGATION
+====================================== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 30" width="26" height="30" fill="none" aria-hidden="true">
+        <polygon points="13,1 25,8 25,22 13,29 1,22 1,8" stroke="#3B9EFF" stroke-width="1.8" fill="rgba(59,158,255,0.08)" stroke-linejoin="round"/>
+        <polyline points="13,1 13,15 25,8" stroke="#3B9EFF" stroke-width="1.5" fill="none" stroke-linejoin="round" opacity="0.7"/>
+        <polyline points="13,15 1,8" stroke="#3B9EFF" stroke-width="1.5" fill="none" opacity="0.7"/>
+        <line x1="13" y1="15" x2="13" y2="29" stroke="#3B9EFF" stroke-width="1.5" opacity="0.7"/>
+      </svg>
+      3D Lab
+    </a>
+
+  </div>
+</nav>
+
+<!-- ======================================
+     HERO
+====================================== -->
+<section id="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-bg-gradient" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      Cairo &amp; Giza &nbsp;·&nbsp; Fast Delivery
+    </div>
+
+    <h1 class="hero-headline">
+      <span class="line-1">Your 3D Vision,</span><br>
+      <span class="line-2 gradient-text">Printed Fast.</span>
+    </h1>
+
+    <p class="hero-subtext">
+      Upload a file, share an idea, or send a broken design —<br>
+      we handle it. Live updates on WhatsApp.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#" data-wa="hero" class="btn btn-wa btn-wa--large">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Start Your Order
+      </a>
+      <a href="#how-it-works" class="btn btn-ghost" style="color: var(--text-secondary);">
+        See how it works ↓
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <span class="trust-item"><span class="trust-icon">⚡</span> Fast Delivery</span>
+      <span class="trust-item"><span class="trust-icon">📍</span> Cairo &amp; Giza</span>
+      <span class="trust-item"><span class="trust-icon">💬</span> Live WhatsApp Tracking</span>
+      <span class="trust-item"><span class="trust-icon">🔧</span> File Repair &amp; Design</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-hint-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ======================================
+     STATS
+====================================== -->
+<section id="stats">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">By the Numbers</span>
+      <h2>Why Cairo Builders <span class="gradient-text">Choose 3D Lab</span></h2>
+    </div>
+    <div class="stats-ticker-wrap">
+      <div class="stats-ticker">
+        <div class="ticker-item">
+          <span class="ticker-num">500<span class="ticker-sfx">+</span></span>
+          <span class="ticker-lbl">Orders Delivered</span>
+        </div>
+        <span class="ticker-dot" aria-hidden="true"></span>
+        <div class="ticker-item">
+          <span class="ticker-num">48<span class="ticker-sfx">h</span></span>
+          <span class="ticker-lbl">Average Turnaround</span>
+        </div>
+        <span class="ticker-dot" aria-hidden="true"></span>
+        <div class="ticker-item">
+          <span class="ticker-num">100<span class="ticker-sfx">%</span></span>
+          <span class="ticker-lbl">WhatsApp Support</span>
+        </div>
+        <span class="ticker-dot" aria-hidden="true"></span>
+        <div class="ticker-item" aria-hidden="true">
+          <span class="ticker-num">500<span class="ticker-sfx">+</span></span>
+          <span class="ticker-lbl">Orders Delivered</span>
+        </div>
+        <span class="ticker-dot" aria-hidden="true"></span>
+        <div class="ticker-item" aria-hidden="true">
+          <span class="ticker-num">48<span class="ticker-sfx">h</span></span>
+          <span class="ticker-lbl">Average Turnaround</span>
+        </div>
+        <span class="ticker-dot" aria-hidden="true"></span>
+        <div class="ticker-item" aria-hidden="true">
+          <span class="ticker-num">100<span class="ticker-sfx">%</span></span>
+          <span class="ticker-lbl">WhatsApp Support</span>
+        </div>
+        <span class="ticker-dot" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     SERVICES
+====================================== -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Do</span>
+      <h2>Everything You Need,<br><span class="gradient-text">One Message Away</span></h2>
+    </div>
+
+    <!-- Single set of cards — CSS switches between grid (desktop) and scroll row (mobile) -->
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3>Fast Printing &amp; Delivery</h3>
+        <p>Fast turnaround across all of Cairo &amp; Giza. Get your part when you actually need it.</p>
+        <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I need something printed and delivered fast. Can you help?">Ask about this →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Live WhatsApp Tracking</h3>
+        <p>No portals, no logins. We send you real-time updates directly in WhatsApp from print start to doorstep.</p>
+        <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! How does the live tracking work on WhatsApp?">Ask about this →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Easy Communication</h3>
+        <p>Just WhatsApp us. No forms, no email chains. Describe your idea in text or voice and we'll take it from there.</p>
+        <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I want to start an order — what do I need to send you?">Start a conversation →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3>Execute Your 3D File</h3>
+        <p>Got an STL, OBJ, or any 3D file? Send it over and we'll print it exactly to your specs — material, size, finish.</p>
+        <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I have a 3D file I want to print. Can I send it to you?">Send your file →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3>Design from Scratch</h3>
+        <p>Have an idea but no file? Describe it or sketch it — our team will model it and print it for you end-to-end.</p>
+        <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I have an idea but no 3D file. Can you design and print it for me?">Share your idea →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="m9.17 14.83 4.24-4.24"/><path d="M9.17 9.17l4.24 4.24"/></svg>
+        </div>
+        <h3>File Repair &amp; Recovery</h3>
+        <p>Broken mesh? Non-manifold geometry? We fix corrupted 3D files that other services reject, and print them clean.</p>
+        <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I have a broken 3D file that won't print. Can you fix it?">Send your broken file →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     HOW IT WORKS
+====================================== -->
+<section id="how-it-works" class="section--dark">
+  <div class="container" style="padding-block: var(--sp-16);">
+    <div class="section-header">
+      <span class="section-label">The Process</span>
+      <h2 style="color: var(--text-on-dark);">Three Steps. <span class="gradient-text">That's It.</span></h2>
+    </div>
+
+    <div class="steps-row">
+      <div class="step anim-step-1">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Message Us on WhatsApp</h3>
+          <p>Send your 3D file, describe your idea, or tell us what needs fixing. No account needed — just a message.</p>
+        </div>
+      </div>
+
+      <div class="step anim-step-2">
+        <div class="step-num">02</div>
+        <div>
+          <h3>We Quote &amp; Confirm</h3>
+          <p>You'll get a price, material options, and delivery time — all in your WhatsApp chat within minutes.</p>
+        </div>
+      </div>
+
+      <div class="step anim-step-3">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Printed &amp; Delivered</h3>
+          <p>We print, pack, and deliver to your door anywhere in Cairo or Giza with live tracking updates.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================
+     TESTIMONIALS MARQUEE
+====================================== -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Reviews</span>
+      <h2 style="color:var(--text-on-dark);">What Clients Say</h2>
+    </div>
+  </div>
+
+  <div class="marquee-wrap">
+    <!-- Single track: SET 1 + SET 2 in one flex row for seamless loop -->
+    <div class="marquee-track">
+
+      <!-- SET 1 — readable by screen readers -->
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Printed a drone arm for my quadcopter. Got WhatsApp photos at every stage — felt like a personal manufacturer."</p>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div><div class="review-name">Ahmed K.</div><div class="review-title">Engineering Student · Drone arm in PLA</div></div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Had a broken bracket STL two services rejected. 3D Lab fixed it overnight and delivered a perfect PETG print next morning."</p>
+        <div class="review-author">
+          <div class="review-avatar">S</div>
+          <div><div class="review-name">Sara M.</div><div class="review-title">Product Designer · Bracket repair</div></div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Sent a voice note describing my prototype enclosure. Quote in 10 minutes, part in 2 days. Wild."</p>
+        <div class="review-author">
+          <div class="review-avatar">O</div>
+          <div><div class="review-name">Omar T.</div><div class="review-title">Startup Founder · Product enclosure</div></div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Needed a 1:200 architectural model for a pitch on Tuesday. Ordered Monday evening. It was on my desk by 9am."</p>
+        <div class="review-author">
+          <div class="review-avatar">Y</div>
+          <div><div class="review-name">Yasmine H.</div><div class="review-title">Architect · 1:200 scale model</div></div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Ordered 40 cable management clips. Every one fit perfectly. WhatsApp updates kept me sane through the whole batch."</p>
+        <div class="review-author">
+          <div class="review-avatar">K</div>
+          <div><div class="review-name">Kareem S.</div><div class="review-title">Workshop Owner · 40× cable clips</div></div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Espresso machine gear snapped. Sent a photo, they modelled and printed a replacement in 24 hours."</p>
+        <div class="review-author">
+          <div class="review-avatar">N</div>
+          <div><div class="review-name">Nour A.</div><div class="review-title">Technician · Custom machine gear</div></div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"6 orders over two months — branded display stands. Each batch on time, consistent quality, zero hassle."</p>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div><div class="review-name">Mohamed R.</div><div class="review-title">Business Owner · 6× display batches</div></div>
+        </div>
+      </div>
+
+      <!-- SET 2 — duplicate for seamless loop, hidden from screen readers -->
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Printed a drone arm for my quadcopter. Got WhatsApp photos at every stage — felt like a personal manufacturer."</p>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div><div class="review-name">Ahmed K.</div><div class="review-title">Engineering Student · Drone arm in PLA</div></div>
+        </div>
+      </div>
+
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Had a broken bracket STL two services rejected. 3D Lab fixed it overnight and delivered a perfect PETG print next morning."</p>
+        <div class="review-author">
+          <div class="review-avatar">S</div>
+          <div><div class="review-name">Sara M.</div><div class="review-title">Product Designer · Bracket repair</div></div>
+        </div>
+      </div>
+
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Sent a voice note describing my prototype enclosure. Quote in 10 minutes, part in 2 days. Wild."</p>
+        <div class="review-author">
+          <div class="review-avatar">O</div>
+          <div><div class="review-name">Omar T.</div><div class="review-title">Startup Founder · Product enclosure</div></div>
+        </div>
+      </div>
+
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Needed a 1:200 architectural model for a pitch on Tuesday. Ordered Monday evening. It was on my desk by 9am."</p>
+        <div class="review-author">
+          <div class="review-avatar">Y</div>
+          <div><div class="review-name">Yasmine H.</div><div class="review-title">Architect · 1:200 scale model</div></div>
+        </div>
+      </div>
+
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Ordered 40 cable management clips. Every one fit perfectly. WhatsApp updates kept me sane through the whole batch."</p>
+        <div class="review-author">
+          <div class="review-avatar">K</div>
+          <div><div class="review-name">Kareem S.</div><div class="review-title">Workshop Owner · 40× cable clips</div></div>
+        </div>
+      </div>
+
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Espresso machine gear snapped. Sent a photo, they modelled and printed a replacement in 24 hours."</p>
+        <div class="review-author">
+          <div class="review-avatar">N</div>
+          <div><div class="review-name">Nour A.</div><div class="review-title">Technician · Custom machine gear</div></div>
+        </div>
+      </div>
+
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"6 orders over two months — branded display stands. Each batch on time, consistent quality, zero hassle."</p>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div><div class="review-name">Mohamed R.</div><div class="review-title">Business Owner · 6× display batches</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     FINAL CTA
+====================================== -->
+<section id="proof-cta" class="section--dark">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <div class="container" style="padding-block: var(--sp-16); position: relative; z-index: 1;">
+    <div class="cta-block">
+      <span class="cta-eyebrow">Ready to Print?</span>
+      <h2 class="cta-headline">
+        Your Print Starts With<br>
+        <span class="gradient-text">One Message.</span>
+      </h2>
+      <p class="cta-descriptor">Send your 3D file, drop a voice note, share a photo, or just describe what you need — straight into WhatsApp. We quote you in minutes and handle everything from there.</p>
+      <a href="#" data-wa="cta" class="btn btn-wa btn-wa--large" style="display:inline-flex;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Open WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     FAQ
+====================================== -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-q">What file formats do you accept?</summary>
+        <div class="faq-a"><p>We accept STL, OBJ, STEP, and most common 3D formats. If you have something else, send it on WhatsApp and we'll confirm right away.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">How do I send you my file?</summary>
+        <div class="faq-a"><p>Send your file directly on WhatsApp. We'll review it, confirm printability, and reply with a quote — usually within minutes.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">How long does printing take?</summary>
+        <div class="faq-a"><p>Most orders are ready within 24–48 hours depending on size and complexity. We'll give you an accurate time estimate with your quote.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">How much does it cost?</summary>
+        <div class="faq-a"><p>Pricing depends on material, size, and complexity. Send us your file or describe what you need and we'll send a quote with no obligation.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Can you design something from scratch?</summary>
+        <div class="faq-a"><p>Yes. Share a sketch, reference photo, or describe your idea on WhatsApp. We'll model it and send you a preview before we print anything.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">My file is broken or won't slice — can you fix it?</summary>
+        <div class="faq-a"><p>Absolutely. Send the file over WhatsApp and we'll diagnose and repair mesh errors, non-manifold geometry, and other common issues at no extra charge.</p></div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     FOOTER
+====================================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        3D Lab<span class="logo-dot"></span>
+      </div>
+      <span class="footer-meta">Cairo &amp; Giza, Egypt &nbsp;·&nbsp; © 2026 3D Lab</span>
+      <span class="footer-meta" style="font-size: var(--text-xs);">Sat–Thu · 9am–10pm</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================
+     SIDE NAVIGATION
+====================================== -->
+<nav id="side-nav" aria-label="Page sections">
+  <a href="#hero"         class="snav-item" data-snav="hero">
+    <span class="snav-label">Home</span><span class="snav-pip"></span>
+  </a>
+  <a href="#stats"        class="snav-item" data-snav="stats">
+    <span class="snav-label">Numbers</span><span class="snav-pip"></span>
+  </a>
+  <a href="#services"     class="snav-item" data-snav="services">
+    <span class="snav-label">Services</span><span class="snav-pip"></span>
+  </a>
+  <a href="#how-it-works" class="snav-item" data-snav="how-it-works">
+    <span class="snav-label">Process</span><span class="snav-pip"></span>
+  </a>
+  <a href="#testimonials" class="snav-item" data-snav="testimonials">
+    <span class="snav-label">Reviews</span><span class="snav-pip"></span>
+  </a>
+  <a href="#proof-cta"    class="snav-item" data-snav="proof-cta">
+    <span class="snav-label">Order</span><span class="snav-pip"></span>
+  </a>
+  <a href="#faq"          class="snav-item" data-snav="faq">
+    <span class="snav-label">FAQ</span><span class="snav-pip"></span>
+  </a>
+</nav>
+
+<!-- ======================================
+     FLOATING WHATSAPP BUTTON
+====================================== -->
+<a href="#" data-wa="float" class="wa-float" aria-label="Chat with 3D Lab on WhatsApp">
+  <span class="wa-pulse" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ======================================
+     SCRIPTS — defer for performance
+====================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/whatsapp.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/hero.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/cursor.js" defer></script>
+
+</body>
+</html>

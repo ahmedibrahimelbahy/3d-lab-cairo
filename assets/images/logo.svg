@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 36" fill="none">
+  <!-- Cube icon -->
+  <g transform="translate(0, 4)">
+    <polygon points="14,0 26,7 26,21 14,28 2,21 2,7" stroke="#3B9EFF" stroke-width="1.8" fill="rgba(59,158,255,0.08)" stroke-linejoin="round"/>
+    <polyline points="14,0 14,14 26,7" stroke="#3B9EFF" stroke-width="1.5" fill="none" stroke-linejoin="round" opacity="0.6"/>
+    <polyline points="14,14 2,7" stroke="#3B9EFF" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <polyline points="14,14 14,28" stroke="#3B9EFF" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="36" y="24" font-family="Space Grotesk, system-ui, sans-serif" font-weight="700" font-size="18" fill="#0A0A0A" letter-spacing="-0.3">3D Lab</text>
+</svg>

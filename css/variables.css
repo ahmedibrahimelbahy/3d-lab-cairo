@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --bg-primary: #FFFFFF;
+  --bg-dark: #0A0A0A;
+  --bg-card: #F4F8FF;
+  --bg-card-hover: #E8F2FF;
+  --bg-section-tint: #F0F7FF;
+
+  --accent-blue: #3B9EFF;
+  --accent-blue-light: #A8D4FF;
+  --accent-blue-dark: #1A72E0;
+  --accent-blue-glow: rgba(59, 158, 255, 0.18);
+
+  --text-on-light: #0A0A0A;
+  --text-on-dark: #FFFFFF;
+  --text-secondary: #5A6A7E;
+  --text-muted-dark: #8B9CB3;
+
+  --border-light: rgba(0, 0, 0, 0.08);
+  --border-accent: rgba(59, 158, 255, 0.4);
+  --border-dark: rgba(255, 255, 255, 0.1);
+
+  --whatsapp: #25D366;
+  --whatsapp-dark: #1DA851;
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --text-xs: clamp(0.7rem, 1.5vw, 0.75rem);
+  --text-sm: clamp(0.8rem, 1.8vw, 0.875rem);
+  --text-base: clamp(0.9rem, 2vw, 1rem);
+  --text-lg: clamp(1rem, 2.2vw, 1.125rem);
+  --text-xl: clamp(1.1rem, 2.5vw, 1.25rem);
+  --text-2xl: clamp(1.25rem, 3vw, 1.5rem);
+  --text-3xl: clamp(1.5rem, 4vw, 2rem);
+  --text-4xl: clamp(2rem, 5vw, 2.75rem);
+  --text-hero: clamp(2.5rem, 7vw, 4.5rem);
+
+  /* Spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --ease-fast: 150ms ease;
+  --ease-normal: 250ms ease;
+  --ease-slow: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 32px rgba(59, 158, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-btn: 0 4px 20px rgba(59, 158, 255, 0.35);
+  --shadow-btn-wa: 0 4px 20px rgba(37, 211, 102, 0.4);
+
+  /* Container */
+  --container-max: 1140px;
+  --container-pad: clamp(1rem, 5vw, 2rem);
+}
