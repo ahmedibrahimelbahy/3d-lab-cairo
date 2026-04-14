@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3D Lab — Professional 3D printing in Cairo & Giza. Fast delivery, live WhatsApp tracking, custom design, and file repair. Start your order now.">
-  <meta name="theme-color" content="#3B9EFF">
+  <meta name="theme-color" content="#D4681A">
 
   <!-- Open Graph -->
   <meta property="og:title" content="3D Lab — 3D Printing in Cairo & Giza">
@@ -17,7 +17,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/variables.css">
@@ -59,13 +59,7 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 30" width="26" height="30" fill="none" aria-hidden="true">
-        <polygon points="13,1 25,8 25,22 13,29 1,22 1,8" stroke="#3B9EFF" stroke-width="1.8" fill="rgba(59,158,255,0.08)" stroke-linejoin="round"/>
-        <polyline points="13,1 13,15 25,8" stroke="#3B9EFF" stroke-width="1.5" fill="none" stroke-linejoin="round" opacity="0.7"/>
-        <polyline points="13,15 1,8" stroke="#3B9EFF" stroke-width="1.5" fill="none" opacity="0.7"/>
-        <line x1="13" y1="15" x2="13" y2="29" stroke="#3B9EFF" stroke-width="1.5" opacity="0.7"/>
-      </svg>
-      3D Lab
+      <img src="assets/images/logo.png" alt="3D Lab EG" height="56" style="display:block;">
     </a>
 
   </div>
@@ -107,10 +101,25 @@
     </div>
 
     <div class="hero-trust">
-      <span class="trust-item"><span class="trust-icon">⚡</span> Fast Delivery</span>
-      <span class="trust-item"><span class="trust-icon">📍</span> Cairo &amp; Giza</span>
-      <span class="trust-item"><span class="trust-icon">💬</span> Live WhatsApp Tracking</span>
-      <span class="trust-item"><span class="trust-icon">🔧</span> File Repair &amp; Design</span>
+      <span class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none"><path d="M9 1L3 9h6l-2 6 8-9H9l2-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        48h Delivery
+      </span>
+      <span class="trust-sep" aria-hidden="true"></span>
+      <span class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.24 1 3 3.24 3 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        Cairo &amp; Giza
+      </span>
+      <span class="trust-sep" aria-hidden="true"></span>
+      <span class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none"><path d="M14 10a2 2 0 0 1-2 2H5l-3 3V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        Live WhatsApp Updates
+      </span>
+      <span class="trust-sep" aria-hidden="true"></span>
+      <span class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none"><path d="M10.5 2.5a2.12 2.12 0 0 1 3 3l-8 8-4 1 1-4 8-8z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        File Repair &amp; Design
+      </span>
     </div>
   </div>
 
@@ -179,7 +188,7 @@
     <!-- Single set of cards — CSS switches between grid (desktop) and scroll row (mobile) -->
     <div class="services-grid">
 
-      <div class="service-card">
+      <div class="service-card service-card--featured" data-num="01">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </div>
@@ -188,7 +197,7 @@
         <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I need something printed and delivered fast. Can you help?">Ask about this →</a>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-num="02">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
@@ -197,7 +206,7 @@
         <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! How does the live tracking work on WhatsApp?">Ask about this →</a>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-num="03">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </div>
@@ -206,7 +215,7 @@
         <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I want to start an order — what do I need to send you?">Start a conversation →</a>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-num="04">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
@@ -215,7 +224,7 @@
         <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I have a 3D file I want to print. Can I send it to you?">Send your file →</a>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-num="05">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
@@ -224,7 +233,7 @@
         <a href="#" class="card-micro-cta" data-wa-msg="Hello 3D Lab! I have an idea but no 3D file. Can you design and print it for me?">Share your idea →</a>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-num="06">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="m9.17 14.83 4.24-4.24"/><path d="M9.17 9.17l4.24 4.24"/></svg>
         </div>
@@ -500,9 +509,12 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">
-        3D Lab<span class="logo-dot"></span>
+        <img src="assets/images/logo.png" alt="3D Lab EG" height="44" style="display:block;filter:brightness(0) invert(1);">
       </div>
-      <span class="footer-meta">Cairo &amp; Giza, Egypt &nbsp;·&nbsp; © 2026 3D Lab</span>
+      <div style="display:flex;flex-direction:column;gap:4px;text-align:center;">
+        <span class="footer-meta">Cairo &amp; Giza, Egypt &nbsp;·&nbsp; © 2026 3D Lab</span>
+        <a href="mailto:3dlab.eg@gmail.com" class="footer-meta" style="color:var(--accent-light);text-decoration:none;">3dlab.eg@gmail.com</a>
+      </div>
       <span class="footer-meta" style="font-size: var(--text-xs);">Sat–Thu · 9am–10pm</span>
     </div>
   </div>

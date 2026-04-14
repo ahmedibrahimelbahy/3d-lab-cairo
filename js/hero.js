@@ -34,22 +34,22 @@
     const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 100);
     camera.position.z = 5;
 
-    // Icosahedron wireframe
-    const geo     = new THREE.IcosahedronGeometry(1.8, 1);
+    // Box (cube) wireframe — matches the logo
+    const geo     = new THREE.BoxGeometry(2.4, 2.4, 2.4, 4, 4, 4);
     const wireGeo = new THREE.WireframeGeometry(geo);
     const wireMat = new THREE.LineBasicMaterial({
-      color: 0x3B9EFF,
+      color: 0x1D58FE,
       transparent: true,
-      opacity: 0.35
+      opacity: 0.28
     });
     const wireMesh = new THREE.LineSegments(wireGeo, wireMat);
     scene.add(wireMesh);
 
     // Solid inner mesh for depth
     const solidMat = new THREE.MeshStandardMaterial({
-      color: 0x3B9EFF,
+      color: 0x1D58FE,
       transparent: true,
-      opacity: 0.04,
+      opacity: 0.05,
       wireframe: false
     });
     const solidMesh = new THREE.Mesh(geo, solidMat);
@@ -65,12 +65,12 @@
     }
     const ptGeo = new THREE.BufferGeometry();
     ptGeo.setAttribute('position', new THREE.BufferAttribute(ptPositions, 3));
-    const ptMat = new THREE.PointsMaterial({ color: 0x3B9EFF, size: 0.03, transparent: true, opacity: 0.5 });
+    const ptMat = new THREE.PointsMaterial({ color: 0x1D58FE, size: 0.03, transparent: true, opacity: 0.45 });
     scene.add(new THREE.Points(ptGeo, ptMat));
 
     // Lights
     scene.add(new THREE.AmbientLight(0xffffff, 0.3));
-    const ptLight = new THREE.PointLight(0x3B9EFF, 1.5, 10);
+    const ptLight = new THREE.PointLight(0x1D58FE, 1.5, 10);
     ptLight.position.set(3, 2, 3);
     scene.add(ptLight);
 
@@ -103,10 +103,10 @@
     // Animate
     function animate(t) {
       const time = t * 0.001;
-      wireMesh.rotation.y  = time * 0.18;
-      wireMesh.rotation.x  = time * 0.10;
-      solidMesh.rotation.y = time * 0.18;
-      solidMesh.rotation.x = time * 0.10;
+      wireMesh.rotation.y  = time * 0.12;
+      wireMesh.rotation.x  = time * 0.07;
+      solidMesh.rotation.y = time * 0.12;
+      solidMesh.rotation.x = time * 0.07;
 
       // Smooth mouse parallax
       camera.position.x += (mouse.x * 0.6 - camera.position.x) * 0.04;

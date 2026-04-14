@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /d)",
+      "Bash(ls -la D:/Projects/web/assets/images/)",
+      "Bash(node screenshot.mjs http://localhost:3000 hero)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(npm list:*)",
+      "Read(//c/Users/hp/.cache/puppeteer/**)",
+      "Bash(start:*)",
+      "Bash(magick \"3D lab EG stacked logo.psd\" \"logo-export.png\")",
+      "Bash(convert \"3D lab EG stacked logo.psd\" \"logo-export.png\")",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -c \"from psd_tools import PSDImage; img = PSDImage.open\\('D:/Projects/web/3D lab EG stacked logo.psd'\\); img.composite\\(\\).save\\('D:/Projects/web/logo-export.png'\\); print\\('done'\\)\")",
+      "Bash(python.exe -m pip install psd-tools -q)",
+      "Bash(python.exe -c \"from psd_tools import PSDImage; img = PSDImage.open\\('D:/Projects/web/3D lab EG stacked logo.psd'\\); img.composite\\(\\).save\\('D:/Projects/web/logo-export.png'\\); print\\('done'\\)\")",
+      "Bash(git add:*)"
+    ]
+  }
+}

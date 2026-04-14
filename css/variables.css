@@ -1,31 +1,31 @@
 :root {
-  /* Colors */
+  /* Colors — 3D Lab EG Brand Blues */
   --bg-primary: #FFFFFF;
-  --bg-dark: #0A0A0A;
-  --bg-card: #F4F8FF;
-  --bg-card-hover: #E8F2FF;
-  --bg-section-tint: #F0F7FF;
+  --bg-dark: #080C1A;
+  --bg-card: #F0F4FF;
+  --bg-card-hover: #E4ECFF;
+  --bg-section-tint: #F0F4FF;
 
-  --accent-blue: #3B9EFF;
-  --accent-blue-light: #A8D4FF;
-  --accent-blue-dark: #1A72E0;
-  --accent-blue-glow: rgba(59, 158, 255, 0.18);
+  --accent: #1D58FE;
+  --accent-light: #5A95FB;
+  --accent-dark: #082B9F;
+  --accent-glow: rgba(29, 88, 254, 0.15);
 
-  --text-on-light: #0A0A0A;
-  --text-on-dark: #FFFFFF;
+  --text-on-light: #080C1A;
+  --text-on-dark: #E8EEFF;
   --text-secondary: #5A6A7E;
   --text-muted-dark: #8B9CB3;
 
   --border-light: rgba(0, 0, 0, 0.08);
-  --border-accent: rgba(59, 158, 255, 0.4);
+  --border-accent: rgba(29, 88, 254, 0.3);
   --border-dark: rgba(255, 255, 255, 0.1);
 
   --whatsapp: #25D366;
   --whatsapp-dark: #1DA851;
 
   /* Typography */
-  --font-heading: 'Space Grotesk', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Barlow Condensed', system-ui, sans-serif;
+  --font-body: 'Barlow', system-ui, sans-serif;
 
   --text-xs: clamp(0.7rem, 1.5vw, 0.75rem);
   --text-sm: clamp(0.8rem, 1.8vw, 0.875rem);
@@ -35,7 +35,7 @@
   --text-2xl: clamp(1.25rem, 3vw, 1.5rem);
   --text-3xl: clamp(1.5rem, 4vw, 2rem);
   --text-4xl: clamp(2rem, 5vw, 2.75rem);
-  --text-hero: clamp(2.5rem, 7vw, 4.5rem);
+  --text-hero: clamp(2.8rem, 8vw, 5.5rem);
 
   /* Spacing */
   --sp-1: 0.25rem;
@@ -65,8 +65,8 @@
 
   /* Shadows */
   --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
-  --shadow-card-hover: 0 8px 32px rgba(59, 158, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-btn: 0 4px 20px rgba(59, 158, 255, 0.35);
+  --shadow-card-hover: 0 8px 32px rgba(29, 88, 254, 0.14), 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-btn: 0 4px 20px rgba(29, 88, 254, 0.45);
   --shadow-btn-wa: 0 4px 20px rgba(37, 211, 102, 0.4);
 
   /* Container */

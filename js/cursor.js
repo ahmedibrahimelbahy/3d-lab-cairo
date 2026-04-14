@@ -21,7 +21,7 @@
       top: 0; left: 0;
       width: 8px; height: 8px;
       margin-left: -4px; margin-top: -4px;
-      background: #3B9EFF;
+      background: #1D58FE;
       border-radius: 50%;
       pointer-events: none;
       z-index: 999999;
@@ -66,14 +66,14 @@
     el.innerHTML = `
       <svg width="${size}" height="${size}" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="6" y="1" width="13" height="13" rx="0.8"
-              stroke="rgba(59,158,255,0.3)" stroke-width="1.2"/>
+              stroke="rgba(29, 88, 254,0.3)" stroke-width="1.2"/>
         <rect x="1" y="6" width="13" height="13" rx="0.8"
-              stroke="rgba(59,158,255,${(0.9 - i * 0.08).toFixed(2)})" stroke-width="1.5"
-              fill="rgba(59,158,255,0.05)"/>
-        <line x1="1" y1="6"  x2="6"  y2="1"  stroke="rgba(59,158,255,0.45)" stroke-width="1"/>
-        <line x1="14" y1="6" x2="19" y2="1"  stroke="rgba(59,158,255,0.45)" stroke-width="1"/>
-        <line x1="14" y1="19" x2="19" y2="14" stroke="rgba(59,158,255,0.35)" stroke-width="1"/>
-        <line x1="1" y1="19" x2="6"  y2="14" stroke="rgba(59,158,255,0.25)" stroke-width="1"/>
+              stroke="rgba(29, 88, 254,${(0.9 - i * 0.08).toFixed(2)})" stroke-width="1.5"
+              fill="rgba(29, 88, 254,0.05)"/>
+        <line x1="1" y1="6"  x2="6"  y2="1"  stroke="rgba(29, 88, 254,0.45)" stroke-width="1"/>
+        <line x1="14" y1="6" x2="19" y2="1"  stroke="rgba(29, 88, 254,0.45)" stroke-width="1"/>
+        <line x1="14" y1="19" x2="19" y2="14" stroke="rgba(29, 88, 254,0.35)" stroke-width="1"/>
+        <line x1="1" y1="19" x2="6"  y2="14" stroke="rgba(29, 88, 254,0.25)" stroke-width="1"/>
       </svg>`;
 
     document.body.appendChild(el);

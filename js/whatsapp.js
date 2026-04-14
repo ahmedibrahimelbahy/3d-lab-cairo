@@ -4,7 +4,7 @@
 // Format: country code + number, no + sign (e.g., 201234567890)
 // ======================================
 const WA_CONFIG = {
-  phone: '201234567890', // <-- REPLACE THIS
+  phone: '201508089355',
   messages: {
     nav:    "Hello 3D Lab! I'd like to start an order.",
     hero:   "Hello 3D Lab! I found you on your website and want to start a 3D printing order.",
