@@ -24,8 +24,8 @@
   --whatsapp-dark: #1DA851;
 
   /* Typography */
-  --font-heading: 'Barlow Condensed', system-ui, sans-serif;
-  --font-body: 'Barlow', system-ui, sans-serif;
+  --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Geist', system-ui, sans-serif;
 
   --text-xs: clamp(0.7rem, 1.5vw, 0.75rem);
   --text-sm: clamp(0.8rem, 1.8vw, 0.875rem);

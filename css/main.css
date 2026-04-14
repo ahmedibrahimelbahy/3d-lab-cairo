@@ -262,7 +262,7 @@
   align-items: center;
   padding-top: 80px;
   overflow: hidden;
-  background: var(--bg-primary);
+  background: var(--bg-dark);
 }
 
 #hero-canvas {
@@ -293,13 +293,13 @@
   align-items: center;
   gap: var(--sp-2);
   padding: var(--sp-2) var(--sp-4);
-  background: var(--bg-card);
-  border: 1px solid var(--border-accent);
+  background: rgba(29, 88, 254, 0.1);
+  border: 1px solid rgba(29, 88, 254, 0.25);
   border-radius: var(--radius-full);
   font-size: var(--text-xs);
   font-family: var(--font-heading);
   font-weight: 600;
-  color: var(--accent-dark);
+  color: var(--accent-light);
   letter-spacing: 0.04em;
 }
 
@@ -318,16 +318,16 @@
 
 .hero-headline {
   font-size: var(--text-hero);
-  color: var(--text-on-light);
+  color: var(--text-on-dark);
   max-width: 14ch;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .hero-headline .line-2 { color: var(--accent); }
 
 .hero-subtext {
   font-size: var(--text-lg);
-  color: var(--text-secondary);
+  color: #8B9CB3;
   max-width: 44ch;
   line-height: 1.7;
 }
@@ -345,7 +345,7 @@
   gap: var(--sp-3);
   flex-wrap: wrap;
   padding-top: var(--sp-4);
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-dark);
   width: 100%;
 }
 
@@ -354,7 +354,7 @@
   align-items: center;
   gap: var(--sp-2);
   font-size: var(--text-sm);
-  color: var(--text-secondary);
+  color: #8B9CB3;
   font-weight: 500;
   letter-spacing: 0.01em;
 }
@@ -369,7 +369,7 @@
 .trust-sep {
   width: 1px;
   height: 14px;
-  background: var(--border-light);
+  background: var(--border-dark);
   flex-shrink: 0;
 }
 
@@ -382,8 +382,8 @@
   display: none;
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(29, 88, 254,0.07) 0%, transparent 70%),
-              radial-gradient(ellipse 60% 50% at 20% 80%, rgba(90, 149, 251,0.05) 0%, transparent 60%);
+  background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(29, 88, 254,0.12) 0%, transparent 70%),
+              radial-gradient(ellipse 60% 50% at 20% 80%, rgba(90, 149, 251,0.08) 0%, transparent 60%);
 }
 
 /* ======================================
@@ -791,19 +791,21 @@
   margin-bottom: var(--sp-3);
 }
 
-/* Avatar shared */
+/* Avatar — numbered badge */
 .testi-avatar {
   width: 36px;
   height: 36px;
-  background: var(--accent);
-  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--accent);
+  letter-spacing: 0.05em;
   flex-shrink: 0;
 }
 
