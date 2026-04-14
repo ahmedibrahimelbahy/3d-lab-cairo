@@ -17,7 +17,10 @@
       "Bash(python3 -c \"from psd_tools import PSDImage; img = PSDImage.open\\('D:/Projects/web/3D lab EG stacked logo.psd'\\); img.composite\\(\\).save\\('D:/Projects/web/logo-export.png'\\); print\\('done'\\)\")",
       "Bash(python.exe -m pip install psd-tools -q)",
       "Bash(python.exe -c \"from psd_tools import PSDImage; img = PSDImage.open\\('D:/Projects/web/3D lab EG stacked logo.psd'\\); img.composite\\(\\).save\\('D:/Projects/web/logo-export.png'\\); print\\('done'\\)\")",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git -C D:/Projects/web remote -v)"
     ]
   }
 }

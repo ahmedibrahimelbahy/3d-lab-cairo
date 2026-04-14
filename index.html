@@ -286,145 +286,110 @@
 </section>
 
 <!-- ======================================
-     TESTIMONIALS MARQUEE
+     TESTIMONIALS
 ====================================== -->
-<section id="testimonials">
+<section id="testimonials" class="section">
   <div class="container">
     <div class="section-header">
       <span class="section-label">Reviews</span>
-      <h2 style="color:var(--text-on-dark);">What Clients Say</h2>
+      <h2>Trusted by Cairo Builders</h2>
     </div>
-  </div>
 
-  <div class="marquee-wrap">
-    <!-- Single track: SET 1 + SET 2 in one flex row for seamless loop -->
-    <div class="marquee-track">
+    <!-- Featured testimonial -->
+    <div class="testi-featured">
+      <div class="testi-featured-quote">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>
+          "Needed a 1:200 architectural model for a pitch on Tuesday. Ordered Monday evening. It was on my desk by 9am — perfect finish, no follow-up needed."
+        </blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">Y</div>
+          <div>
+            <div class="testi-name">Yasmine H.</div>
+            <div class="testi-role">Architect · 1:200 scale model</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-featured-stat">
+        <span class="testi-stat-num">500<span class="testi-stat-sfx">+</span></span>
+        <span class="testi-stat-lbl">orders delivered across Cairo &amp; Giza</span>
+        <div class="testi-star-row" aria-label="5 out of 5 stars average">★★★★★</div>
+        <span class="testi-stat-sub">average rating</span>
+      </div>
+    </div>
 
-      <!-- SET 1 — readable by screen readers -->
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Printed a drone arm for my quadcopter. Got WhatsApp photos at every stage — felt like a personal manufacturer."</p>
-        <div class="review-author">
-          <div class="review-avatar">A</div>
-          <div><div class="review-name">Ahmed K.</div><div class="review-title">Engineering Student · Drone arm in PLA</div></div>
+    <!-- Supporting grid -->
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Printed a drone arm for my quadcopter. Got WhatsApp photos at every stage — felt like a personal manufacturer."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Ahmed K.</div>
+            <div class="testi-role">Engineering Student · Drone arm in PLA</div>
+          </div>
         </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Had a broken bracket STL two services rejected. 3D Lab fixed it overnight and delivered a perfect PETG print next morning."</p>
-        <div class="review-author">
-          <div class="review-avatar">S</div>
-          <div><div class="review-name">Sara M.</div><div class="review-title">Product Designer · Bracket repair</div></div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Had a broken bracket STL two services rejected. 3D Lab fixed it overnight and delivered a perfect PETG print next morning."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Sara M.</div>
+            <div class="testi-role">Product Designer · Bracket repair</div>
+          </div>
         </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Sent a voice note describing my prototype enclosure. Quote in 10 minutes, part in 2 days. Wild."</p>
-        <div class="review-author">
-          <div class="review-avatar">O</div>
-          <div><div class="review-name">Omar T.</div><div class="review-title">Startup Founder · Product enclosure</div></div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Sent a voice note describing my prototype enclosure. Quote in 10 minutes, part in 2 days. Wild."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">O</div>
+          <div>
+            <div class="testi-name">Omar T.</div>
+            <div class="testi-role">Startup Founder · Product enclosure</div>
+          </div>
         </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Needed a 1:200 architectural model for a pitch on Tuesday. Ordered Monday evening. It was on my desk by 9am."</p>
-        <div class="review-author">
-          <div class="review-avatar">Y</div>
-          <div><div class="review-name">Yasmine H.</div><div class="review-title">Architect · 1:200 scale model</div></div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Ordered 40 cable management clips. Every one fit perfectly. WhatsApp updates kept me sane through the whole batch."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">K</div>
+          <div>
+            <div class="testi-name">Kareem S.</div>
+            <div class="testi-role">Workshop Owner · 40× cable clips</div>
+          </div>
         </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Ordered 40 cable management clips. Every one fit perfectly. WhatsApp updates kept me sane through the whole batch."</p>
-        <div class="review-author">
-          <div class="review-avatar">K</div>
-          <div><div class="review-name">Kareem S.</div><div class="review-title">Workshop Owner · 40× cable clips</div></div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Espresso machine gear snapped. Sent a photo, they modelled and printed a replacement in 24 hours."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">N</div>
+          <div>
+            <div class="testi-name">Nour A.</div>
+            <div class="testi-role">Technician · Custom machine gear</div>
+          </div>
         </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Espresso machine gear snapped. Sent a photo, they modelled and printed a replacement in 24 hours."</p>
-        <div class="review-author">
-          <div class="review-avatar">N</div>
-          <div><div class="review-name">Nour A.</div><div class="review-title">Technician · Custom machine gear</div></div>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"6 orders over two months — branded display stands. Each batch on time, consistent quality, zero hassle."</p>
-        <div class="review-author">
-          <div class="review-avatar">M</div>
-          <div><div class="review-name">Mohamed R.</div><div class="review-title">Business Owner · 6× display batches</div></div>
-        </div>
-      </div>
-
-      <!-- SET 2 — duplicate for seamless loop, hidden from screen readers -->
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Printed a drone arm for my quadcopter. Got WhatsApp photos at every stage — felt like a personal manufacturer."</p>
-        <div class="review-author">
-          <div class="review-avatar">A</div>
-          <div><div class="review-name">Ahmed K.</div><div class="review-title">Engineering Student · Drone arm in PLA</div></div>
-        </div>
-      </div>
-
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Had a broken bracket STL two services rejected. 3D Lab fixed it overnight and delivered a perfect PETG print next morning."</p>
-        <div class="review-author">
-          <div class="review-avatar">S</div>
-          <div><div class="review-name">Sara M.</div><div class="review-title">Product Designer · Bracket repair</div></div>
-        </div>
-      </div>
-
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Sent a voice note describing my prototype enclosure. Quote in 10 minutes, part in 2 days. Wild."</p>
-        <div class="review-author">
-          <div class="review-avatar">O</div>
-          <div><div class="review-name">Omar T.</div><div class="review-title">Startup Founder · Product enclosure</div></div>
-        </div>
-      </div>
-
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Needed a 1:200 architectural model for a pitch on Tuesday. Ordered Monday evening. It was on my desk by 9am."</p>
-        <div class="review-author">
-          <div class="review-avatar">Y</div>
-          <div><div class="review-name">Yasmine H.</div><div class="review-title">Architect · 1:200 scale model</div></div>
-        </div>
-      </div>
-
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Ordered 40 cable management clips. Every one fit perfectly. WhatsApp updates kept me sane through the whole batch."</p>
-        <div class="review-author">
-          <div class="review-avatar">K</div>
-          <div><div class="review-name">Kareem S.</div><div class="review-title">Workshop Owner · 40× cable clips</div></div>
-        </div>
-      </div>
-
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"Espresso machine gear snapped. Sent a photo, they modelled and printed a replacement in 24 hours."</p>
-        <div class="review-author">
-          <div class="review-avatar">N</div>
-          <div><div class="review-name">Nour A.</div><div class="review-title">Technician · Custom machine gear</div></div>
-        </div>
-      </div>
-
-      <div class="review-card" aria-hidden="true">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-quote">"6 orders over two months — branded display stands. Each batch on time, consistent quality, zero hassle."</p>
-        <div class="review-author">
-          <div class="review-avatar">M</div>
-          <div><div class="review-name">Mohamed R.</div><div class="review-title">Business Owner · 6× display batches</div></div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"6 orders over two months — branded display stands. Each batch on time, consistent quality, zero hassle."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <div class="testi-name">Mohamed R.</div>
+            <div class="testi-role">Business Owner · 6× display batches</div>
+          </div>
         </div>
       </div>
 
