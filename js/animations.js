@@ -66,17 +66,6 @@
     ease: 'power3.out',
   });
 
-  // ---- Testimonial proof images (WhatsApp lifestyle) ----
-  gsap.from('.testi-proof-card', {
-    scrollTrigger: { trigger: '.testi-proof-row', start: 'top 82%' },
-    opacity: 0,
-    y: 40,
-    scale: 0.94,
-    duration: 0.8,
-    stagger: 0.15,
-    ease: 'power3.out',
-  });
-
   // ---- Step images (process shots) ----
   gsap.from('.step-img', {
     scrollTrigger: { trigger: '.steps-row', start: 'top 75%' },

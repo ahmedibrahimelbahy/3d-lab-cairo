@@ -147,7 +147,7 @@ async function generateOG() {
 async function generateFavicons() {
   console.log('\nGenerating favicons…');
 
-  const logo = 'assets/images/logo.png';
+  const logo = 'img/logo.png';
 
   // PNG favicons — modern browsers handle these perfectly
   const sizes = [
