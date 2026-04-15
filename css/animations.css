@@ -133,12 +133,7 @@
    HERO GRADIENT BG PULSE (mobile fallback)
 ====================================== */
 #hero.hero-static {
-  background: linear-gradient(
-    160deg,
-    #FFFFFF 0%,
-    #EEF3FF 40%,
-    #E4ECFF 100%
-  );
+  background: var(--bg-dark);
 }
 
 /* ======================================

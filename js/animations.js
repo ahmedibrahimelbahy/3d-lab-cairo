@@ -66,6 +66,45 @@
     ease: 'power3.out',
   });
 
+  // ---- Testimonial proof images (WhatsApp lifestyle) ----
+  gsap.from('.testi-proof-card', {
+    scrollTrigger: { trigger: '.testi-proof-row', start: 'top 82%' },
+    opacity: 0,
+    y: 40,
+    scale: 0.94,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: 'power3.out',
+  });
+
+  // ---- Step images (process shots) ----
+  gsap.from('.step-img', {
+    scrollTrigger: { trigger: '.steps-row', start: 'top 75%' },
+    opacity: 0,
+    scale: 0.9,
+    y: 20,
+    duration: 0.7,
+    stagger: 0.12,
+    ease: 'power3.out',
+  });
+
+  // ---- Color strip reveal ----
+  gsap.from('.color-strip img', {
+    scrollTrigger: { trigger: '.color-strip', start: 'top 85%' },
+    opacity: 0,
+    y: 24,
+    duration: 0.7,
+    ease: 'power2.out',
+  });
+  gsap.from('.color-strip-label', {
+    scrollTrigger: { trigger: '.color-strip', start: 'top 85%' },
+    opacity: 0,
+    y: 10,
+    duration: 0.5,
+    delay: 0.2,
+    ease: 'power2.out',
+  });
+
   // ---- CTA block ----
   gsap.from('.cta-block > *', {
     scrollTrigger: { trigger: '.cta-block', start: 'top 80%' },

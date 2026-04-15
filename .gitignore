@@ -9,3 +9,7 @@ out/
 *.pem
 
 .vercel
+
+# Raw source PNGs — not needed in git (converted to WebP in img/)
+Images/
+*.psd

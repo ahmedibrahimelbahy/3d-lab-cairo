@@ -4,15 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3D Lab — Professional 3D printing in Cairo & Giza. Fast delivery, live WhatsApp tracking, custom design, and file repair. Start your order now.">
-  <meta name="theme-color" content="#D4681A">
+  <meta name="theme-color" content="#080C1A">
 
   <!-- Open Graph -->
   <meta property="og:title" content="3D Lab — 3D Printing in Cairo & Giza">
   <meta property="og:description" content="Upload a file, share an idea, or send a broken design — we handle it. Fast delivery. Live WhatsApp tracking.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/og.jpg">
+  <meta property="og:image" content="og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="og.jpg">
 
   <title>3D Lab — 3D Printing Cairo & Giza</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +33,23 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID to activate -->
+  <script>
+    (function () {
+      var GA_ID = 'G-XXXXXXXXXX';
+      if (GA_ID === 'G-XXXXXXXXXX') return; // placeholder not replaced — skip
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID, { anonymize_ip: true });
+    })();
+  </script>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -76,6 +102,7 @@
   <div class="hero-bg-gradient" aria-hidden="true"></div>
 
   <div class="hero-content">
+    <div class="hero-text">
     <div class="hero-badge">
       <span class="badge-dot" aria-hidden="true"></span>
       Cairo &amp; Giza &nbsp;·&nbsp; Fast Delivery
@@ -122,6 +149,16 @@
         <svg class="trust-icon" viewBox="0 0 16 16" fill="none"><path d="M10.5 2.5a2.12 2.12 0 0 1 3 3l-8 8-4 1 1-4 8-8z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
         File Repair &amp; Design
       </span>
+    </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-main">
+        <img src="img/hero-printer.webp" alt="3D printer with warm amber lighting creating a precision blue part" width="600" height="400" loading="eager">
+      </div>
+      <div class="hero-img-float">
+        <img src="img/hero-enclosure.webp" alt="Precision 3D printed enclosure" width="280" height="350" loading="eager">
+      </div>
     </div>
   </div>
 
@@ -174,6 +211,29 @@
         <span class="ticker-dot" aria-hidden="true"></span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ======================================
+     WORK SHOWCASE
+====================================== -->
+<section id="showcase" aria-label="Our work">
+  <div class="showcase-track">
+    <div class="showcase-item"><img src="img/showcase-01.webp" alt="3D printed enclosure — studio shot" loading="lazy"></div>
+    <div class="showcase-item"><img src="img/showcase-02.webp" alt="Post-processing a finished 3D print" loading="lazy"></div>
+    <div class="showcase-item"><img src="img/showcase-03.webp" alt="Premium blue PLA filament spool" loading="lazy"></div>
+    <div class="showcase-item"><img src="img/showcase-04.webp" alt="Removing supports from a precision print" loading="lazy"></div>
+    <div class="showcase-item"><img src="img/nozzle.webp" alt="Close-up of 3D printer nozzle extruding filament" loading="lazy"></div>
+    <div class="showcase-item"><img src="img/parts-collection.webp" alt="Collection of 3D printed parts" loading="lazy"></div>
+    <div class="showcase-item"><img src="img/showcase-07.webp" alt="Filament texture close-up" loading="lazy"></div>
+    <!-- Duplicate set for seamless infinite scroll -->
+    <div class="showcase-item" aria-hidden="true"><img src="img/showcase-01.webp" alt="" loading="lazy"></div>
+    <div class="showcase-item" aria-hidden="true"><img src="img/showcase-02.webp" alt="" loading="lazy"></div>
+    <div class="showcase-item" aria-hidden="true"><img src="img/showcase-03.webp" alt="" loading="lazy"></div>
+    <div class="showcase-item" aria-hidden="true"><img src="img/showcase-04.webp" alt="" loading="lazy"></div>
+    <div class="showcase-item" aria-hidden="true"><img src="img/nozzle.webp" alt="" loading="lazy"></div>
+    <div class="showcase-item" aria-hidden="true"><img src="img/parts-collection.webp" alt="" loading="lazy"></div>
+    <div class="showcase-item" aria-hidden="true"><img src="img/showcase-07.webp" alt="" loading="lazy"></div>
   </div>
 </section>
 
@@ -249,6 +309,16 @@
 </section>
 
 <!-- ======================================
+     COLOR RANGE
+====================================== -->
+<div class="color-strip">
+  <div class="container">
+    <img src="img/filament-colors.webp" alt="PLA filament available in every color — red, orange, yellow, green, teal, blue, purple, pink, white" loading="lazy">
+    <p class="color-strip-label">Available in every color. Just tell us what you need.</p>
+  </div>
+</div>
+
+<!-- ======================================
      HOW IT WORKS
 ====================================== -->
 <section id="how-it-works" class="section--dark">
@@ -260,6 +330,7 @@
 
     <div class="steps-row">
       <div class="step anim-step-1">
+        <div class="step-img"><img src="img/whatsapp-order-1.webp" alt="Customer ordering via WhatsApp" loading="lazy"></div>
         <div class="step-num">01</div>
         <div>
           <h3>Message Us on WhatsApp</h3>
@@ -268,6 +339,7 @@
       </div>
 
       <div class="step anim-step-2">
+        <div class="step-img"><img src="img/nozzle.webp" alt="3D printer nozzle preparing your print" loading="lazy"></div>
         <div class="step-num">02</div>
         <div>
           <h3>We Quote &amp; Confirm</h3>
@@ -276,6 +348,7 @@
       </div>
 
       <div class="step anim-step-3">
+        <div class="step-img"><img src="img/parts-collection.webp" alt="Collection of finished 3D printed parts ready for delivery" loading="lazy"></div>
         <div class="step-num">03</div>
         <div>
           <h3>Printed &amp; Delivered</h3>
@@ -317,6 +390,18 @@
         <span class="testi-stat-lbl">orders delivered across Cairo &amp; Giza</span>
         <div class="testi-star-row" aria-label="5 out of 5 stars average">★★★★★</div>
         <span class="testi-stat-sub">average rating</span>
+      </div>
+    </div>
+
+    <!-- Visual proof: real WhatsApp ordering -->
+    <div class="testi-proof-row">
+      <div class="testi-proof-card">
+        <img src="img/whatsapp-order-2.webp" alt="Customer holding 3D printed part with WhatsApp order confirmation on phone" loading="lazy">
+        <span class="testi-proof-badge">Real WhatsApp Order</span>
+      </div>
+      <div class="testi-proof-card">
+        <img src="img/whatsapp-order-1.webp" alt="Customer receiving 3D printed bracket with delivery confirmation" loading="lazy">
+        <span class="testi-proof-badge">Delivered &amp; Confirmed</span>
       </div>
     </div>
 
@@ -448,6 +533,7 @@
      FINAL CTA
 ====================================== -->
 <section id="proof-cta" class="section--dark">
+  <div class="cta-bg-img" aria-hidden="true"><img src="img/cta-texture.webp" alt="" loading="lazy"></div>
   <div class="blob blob-1" aria-hidden="true"></div>
   <div class="blob blob-2" aria-hidden="true"></div>
 

@@ -10,7 +10,7 @@
   const isTouch  = window.matchMedia('(hover: none)').matches;
   const isLowEnd = (navigator.hardwareConcurrency || 8) <= 2 ||
                    (navigator.deviceMemory || 8) <= 2;
-  const useThree = !isMobile && !isLowEnd && typeof THREE !== 'undefined';
+  const useThree = !isLowEnd && typeof THREE !== 'undefined';
 
   const heroEl   = document.getElementById('hero');
   const canvas   = document.getElementById('hero-canvas');
@@ -56,7 +56,7 @@
     scene.add(solidMesh);
 
     // Particle cloud
-    const ptCount = 120;
+    const ptCount = isMobile ? 40 : 120;
     const ptPositions = new Float32Array(ptCount * 3);
     for (let i = 0; i < ptCount; i++) {
       ptPositions[i * 3]     = (Math.random() - 0.5) * 8;
@@ -137,7 +137,9 @@
     tl.from('.hero-badge',   { opacity: 0, y: 16, duration: 0.5, ease: 'power2.out' })
       .from('.hero-headline .line-1', { opacity: 0, y: 30, duration: 0.65, ease: 'power3.out' }, '-=0.2')
       .from('.hero-headline .line-2', { opacity: 0, y: 30, duration: 0.65, ease: 'power3.out' }, '-=0.45')
-      .from('.hero-subtext',  { opacity: 0, y: 20, duration: 0.55, ease: 'power2.out' }, '-=0.35')
+      .from('.hero-img-main', { opacity: 0, x: 60, scale: 0.92, duration: 0.95, ease: 'power3.out' }, '-=0.85')
+      .from('.hero-img-float', { opacity: 0, y: 30, scale: 0.9, duration: 0.8, ease: 'back.out(1.2)' }, '-=0.55')
+      .from('.hero-subtext',  { opacity: 0, y: 20, duration: 0.55, ease: 'power2.out' }, '-=0.6')
       .from('.hero-actions',  { opacity: 0, y: 16, duration: 0.5,  ease: 'power2.out' }, '-=0.3')
       .from('.hero-trust',    { opacity: 0,         duration: 0.5,  ease: 'none'        }, '-=0.2')
       .from('.scroll-hint',   { opacity: 0, y: 8,   duration: 0.4,  ease: 'power1.out'  }, '+=0.4');
